@@ -30,7 +30,10 @@ function bubble_sort(array::Array{T,1};
         
         for j ∈ 1:N-i
             if arr[j] > arr[j+1]
-
+                x = arr[j]
+                y = arr[j+1]
+                arr[j]=y
+                arr[j+1]=x
                 # TODO: swap that values at j and j+1
                 # ...
 
